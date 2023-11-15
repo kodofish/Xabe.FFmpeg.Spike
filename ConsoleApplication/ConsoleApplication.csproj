@@ -49,11 +49,6 @@
       <PackageReference Include="Xabe.FFmpeg" Version="5.2.6" />
       <PackageReference Include="Xabe.FFmpeg.Downloader" Version="5.2.6" />
     </ItemGroup>
-    <ItemGroup>
-      <Content Include="Demo\SampleVideo_1280x720_1mb.mp4">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Content>
-    </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
          Other similar extension points exist, see Microsoft.Common.targets.
