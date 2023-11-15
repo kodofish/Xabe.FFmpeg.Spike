@@ -7,6 +7,10 @@ using Xabe.FFmpeg.Downloader;
 
 namespace ConsoleApplication
 {
+    /// <summary>
+    /// 這支程式主要是試驗使用 Xabe.FFmpeg 套件 進行 MP4 轉 WEBM 的功能
+    /// 套件官網：https://ffmpeg.xabe.net/index.html
+    /// </summary>
     internal class Program
     {
         /// <summary>
