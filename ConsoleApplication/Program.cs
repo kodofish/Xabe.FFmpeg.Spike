@@ -10,17 +10,17 @@ namespace ConsoleApplication
     internal class Program
     {
         /// <summary>
-        ///     下載 FFmpeg 執行檔
+        ///     下載 FFMpeg 執行檔
         /// </summary>
-        private static async Task DownloadFFmpeg()
+        private static async Task DownloadFFMpeg()
         {
             await FFmpegDownloader.GetLatestVersion(FFmpegVersion.Full);
-            Console.WriteLine("FFmpeg downloaded.");
+            Console.WriteLine("FFMpeg downloaded.");
         }
 
         public static void Main(string[] args)
         {
-            DownloadFFmpeg().GetAwaiter().GetResult();
+            DownloadFFMpeg().GetAwaiter().GetResult();
 
             Console.WriteLine(FFmpeg.ExecutablesPath);
 
@@ -72,7 +72,7 @@ namespace ConsoleApplication
         }
 
         //實作一個方法, 傳入 FileInfo 型別的參數, FileInfo 會是 Mp4 影片檔, 要從這個影片擷取封面圖檔
-        private static async Task RunGetThumbnail(FileInfo file)
+        private static async Task RunGetThumbnail(FileSystemInfo file)
         {
             //將影片檔的路徑, 改成跟影片檔同一個資料夾, 並且將副檔名改成 jpg
             var outputFileName = Path.ChangeExtension(file.FullName, ".png");
